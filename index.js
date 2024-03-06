@@ -3,7 +3,12 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 const { GoogleGenerativeAI } = require("@google/generative-ai");
+
 app.use(cors());
+
+// Define your routes
+
+
 app.get('/chat', (req, res) => {
 res.send("working")
 })
